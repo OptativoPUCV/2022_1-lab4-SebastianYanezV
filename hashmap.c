@@ -42,14 +42,12 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value) 
 {
     long pos = hash(key, map->capacity);
-    //Pair *newPair = createPair(key, value);
     map->buckets = (Pair **) realloc(map->buckets, (map->capacity + 1));
 
     if (map->buckets[pos] == NULL)
     {
         strcpy(map->buckets[pos]->key, key);
-        strcpy(map->buckets[pos]->value, value);
-        //map->buckets[pos]->value = value;
+        map->buckets[pos]->value = value;
         map->current = pos;
         map->size++;
     }
