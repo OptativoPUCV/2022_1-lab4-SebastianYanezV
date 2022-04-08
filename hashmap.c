@@ -53,10 +53,10 @@ void insertMap(HashMap * map, char * key, void * value)
     }
     else
     {
-        while ((map->buckets[pos] != NULL) && (is_equal(map->buckets[pos]->key, key) == 1))
+        while (map->buckets[pos] != NULL)
         {
-            pos++;
             if (pos == map->capacity) pos = 0;
+            pos++;
         }
 
         map->buckets[pos] = newPair;
