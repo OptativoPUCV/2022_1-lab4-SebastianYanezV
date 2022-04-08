@@ -65,3 +65,13 @@ Thu Apr  7 21:55:02 -04 2022:
  1 file changed, 6 insertions(+), 6 deletions(-)
  tests:  0|0
 07af0c9
+Thu Apr  7 21:56:28 -04 2022: 
+ hashmap.c | 7 -------
+ 1 file changed, 7 deletions(-)
+In file included from test.c:4:
+./hashmap.c:44:10: error: unused variable 'pos' [-Werror,-Wunused-variable]
+    long pos = hash(key, map->capacity);
+         ^
+1 error generated.
+Compilation failed
+ef1f772
