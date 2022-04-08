@@ -96,3 +96,13 @@ Thu Apr  7 22:13:31 -04 2022:
  1 file changed, 9 insertions(+), 4 deletions(-)
  tests:  0|0
 65b6ddd
+Thu Apr  7 23:30:23 -04 2022: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+./hashmap.c:44:46: error: void function 'insertMap' should not return a value [-Wreturn-type]
+    if (map->buckets == NULL || key == NULL) return NULL;
+                                             ^      ~~~~
+1 error generated.
+Compilation failed
+a0fe1f5
