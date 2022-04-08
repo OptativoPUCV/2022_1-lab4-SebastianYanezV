@@ -301,3 +301,9 @@ Fri Apr  8 12:21:00 -04 2022:
  tests:  6|4
 total_score: 30/70
 51c70fc
+Fri Apr  8 17:50:31 -04 2022: 
+ hashmap.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+ tests:  8|3
+total_score: 40/70
+d9d3735
