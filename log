@@ -224,3 +224,9 @@ Fri Apr  8 11:48:19 -04 2022:
  tests:  2|5
 total_score: 20/70
 65f0baf
+Fri Apr  8 11:51:11 -04 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  2|5
+total_score: 20/70
+e5d3aa4
