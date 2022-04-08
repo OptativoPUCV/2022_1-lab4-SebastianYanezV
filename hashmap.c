@@ -43,17 +43,17 @@ void insertMap(HashMap * map, char * key, void * value)
 {
     long pos = hash(key, map->capacity);
 
-    strcpy(map->buckets[pos]->key, key);
-    strcpy(map->buckets[pos]->value, value);
-    //map->buckets[pos]->value = value;
-    map->size++;
-    map->current = pos;
-
-    /*long pos = hash(key, map->capacity);
-
-    if (is_equal(key, map->buckets[pos]->key) == 0)
+    if (map->buckets[pos]->key == NULL && map->buckets[pos]->value == NULL)
     {
-        map->buckets[pos]->key = key;
+        strcpy(map->buckets[pos]->key, key);
+        map->buckets[pos]->value = value;
+        map->size++;
+        map->current = pos;
+    }
+
+    /*if (is_equal(key, map->buckets[pos]->key) == 0)
+    {
+        strcpy(map->buckets[pos]->key, key);
         map->buckets[pos]->value = value;
         map->size++;
         map->current = pos;
