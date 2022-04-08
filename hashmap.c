@@ -103,7 +103,7 @@ Pair * searchMap(HashMap * map,  char * key)
         map->current = pos;
         return map->buckets[pos];
     }
-    else
+    /*else
     {
         while (is_equal(map->buckets[pos]->key, key) == 0)
         {
@@ -115,7 +115,7 @@ Pair * searchMap(HashMap * map,  char * key)
         }
         map->current = pos;
         return map->buckets[pos];
-    }
+    }*/
 
     return NULL;
 }
