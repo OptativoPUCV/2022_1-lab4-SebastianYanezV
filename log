@@ -121,3 +121,13 @@ Fri Apr  8 11:17:30 -04 2022:
  1 file changed, 1 insertion(+)
  tests:  0|0
 cf6d11d
+Fri Apr  8 11:19:20 -04 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+./hashmap.c:45:11: error: unused variable 'newPair' [-Werror,-Wunused-variable]
+    Pair *newPair = createPair(key, value);
+          ^
+1 error generated.
+Compilation failed
+f20564a
