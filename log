@@ -289,3 +289,9 @@ Fri Apr  8 12:18:47 -04 2022:
  tests:  3|5
 total_score: 20/70
 c318fba
+Fri Apr  8 12:19:59 -04 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 30/70
+0106853
