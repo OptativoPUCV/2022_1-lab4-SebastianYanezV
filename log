@@ -81,3 +81,8 @@ Thu Apr  7 21:57:03 -04 2022:
  tests:  1|5
 total_score: 10/70
 98b3d4f
+Thu Apr  7 22:03:07 -04 2022: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  0|0
+0b36544
