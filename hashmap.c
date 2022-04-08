@@ -103,6 +103,19 @@ Pair * searchMap(HashMap * map,  char * key)
         map->current = pos;
         return map->buckets[pos];
     }
+    else
+    {
+        while (is_equal(map->buckets[pos]->key, key) == 0)
+        {
+            if (pos == map->capacity) 
+            {
+                pos = (pos + 1) % map->capacity;
+            }
+            pos++;
+        }
+        map->current = pos;
+        return map->buckets[pos];
+    }
 
     return NULL;
 }
