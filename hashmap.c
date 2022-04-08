@@ -51,6 +51,8 @@ void insertMap(HashMap * map, char * key, void * value)
         map->current = pos;
         map->size++;
     }
+
+    pos++;
     /*else
     {
         while (map->buckets[pos] != NULL)
