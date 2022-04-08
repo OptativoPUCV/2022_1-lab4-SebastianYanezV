@@ -100,6 +100,7 @@ Pair * searchMap(HashMap * map,  char * key)
 
     if (is_equal(map->buckets[pos]->key, key) == 1)
     {
+        map->current = pos;
         return map->buckets[pos];
     }
 
