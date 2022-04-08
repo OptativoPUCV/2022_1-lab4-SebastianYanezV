@@ -43,19 +43,14 @@ void insertMap(HashMap * map, char * key, void * value)
 {
     long pos = hash(key, map->capacity);
 
-    if (map->buckets[pos]->key == NULL)
-    {
-        map->size++;
-    }
-
-    /*if (is_equal(key, map->buckets[pos]->key) == 0)
+    if (map->buckets[pos] == NULL && map->buckets[pos]->key == NULL)
     {
         strcpy(map->buckets[pos]->key, key);
         map->buckets[pos]->value = value;
         map->size++;
         map->current = pos;
     }
-    else
+    /*else
     {
         while (map->buckets[pos]->key != NULL)
         {
