@@ -334,3 +334,13 @@ Fri Apr  8 18:08:38 -04 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 1362027
+Fri Apr  8 18:13:35 -04 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+./hashmap.c:107:44: error: void function 'eraseMap' should not return a value [-Wreturn-type]
+            if (map->buckets[pos] == NULL) return NULL;
+                                           ^      ~~~~
+1 error generated.
+Compilation failed
+3455006
