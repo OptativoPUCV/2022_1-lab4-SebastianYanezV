@@ -156,3 +156,8 @@ Fri Apr  8 11:25:01 -04 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 0bd5e44
+Fri Apr  8 11:26:13 -04 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+e6ca254

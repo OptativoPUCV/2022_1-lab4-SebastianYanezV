@@ -48,7 +48,8 @@ void insertMap(HashMap * map, char * key, void * value)
     if (map->buckets[pos] == NULL)
     {
         strcpy(map->buckets[pos]->key, key);
-        map->buckets[pos]->value = value;
+        strcpy(map->buckets[pos]->value, value);
+        //map->buckets[pos]->value = value;
         map->current = pos;
         map->size++;
     }
