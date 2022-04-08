@@ -318,3 +318,9 @@ Fri Apr  8 17:58:03 -04 2022:
  1 file changed, 10 insertions(+)
  tests:  0|0
 87d4ef1
+Fri Apr  8 18:06:09 -04 2022: 
+ hashmap.c | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+ tests:  9|3
+total_score: 40/70
+e3c9d19

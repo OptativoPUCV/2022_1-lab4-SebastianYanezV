@@ -41,10 +41,18 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap * map, char * key, void * value) 
 {
+    int porcentajeDeCapacidad;
+
+    porcentajeDeCapacidad = (map->size * 100) / map->capacity;
+
+    if (porcentajeDeCapacidad == 70)
+    {
+        map->buckets = (Pair **) realloc(map->buckets, (map->capacity + 1));
+        map->capacity++;
+    }
+
     long pos = hash(key, map->capacity);
     Pair *newPair = createPair(key, value);
-    // hacer un if 
-    //map->buckets = (Pair **) realloc(map->buckets, (map->capacity + 1));
     
     if (map->buckets[pos] == NULL)
     {
@@ -92,7 +100,7 @@ void eraseMap(HashMap * map,  char * key)
         map->buckets[pos]->key = NULL;
         map->size--;
     }
-    else
+    /*else
     {
         while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
         {
@@ -102,7 +110,7 @@ void eraseMap(HashMap * map,  char * key)
 
         map->buckets[pos]->key = NULL;
         map->size--;
-    }
+    }*/
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
