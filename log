@@ -91,3 +91,8 @@ Thu Apr  7 22:08:41 -04 2022:
  1 file changed, 2 insertions(+), 7 deletions(-)
  tests:  0|0
 43be1ed
+Thu Apr  7 22:13:31 -04 2022: 
+ hashmap.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+ tests:  0|0
+65b6ddd

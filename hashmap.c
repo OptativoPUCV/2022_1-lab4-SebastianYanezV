@@ -47,16 +47,21 @@ void insertMap(HashMap * map, char * key, void * value)
     {
         strcpy(map->buckets[pos]->key, key);
         map->buckets[pos]->value = value;
-        map->size++;
         map->current = pos;
+        map->size++;
     }
-    /*else
+    else
     {
-        while (map->buckets[pos]->key != NULL)
+        while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
         {
             pos++;
         }
-    }*/
+        
+        strcpy(map->buckets[pos]->key, key);
+        map->buckets[pos]->value = value;
+        map->current = pos;
+        map->size++;
+    }
 }
 
 void enlarge(HashMap * map) {
