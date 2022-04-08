@@ -360,3 +360,9 @@ Fri Apr  8 18:15:25 -04 2022:
  1 file changed, 3 insertions(+), 3 deletions(-)
  tests:  0|0
 c300e0d
+Fri Apr  8 18:16:32 -04 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  9|3
+total_score: 40/70
+5b471a3
