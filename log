@@ -50,3 +50,8 @@ Thu Apr  7 21:48:55 -04 2022:
  tests:  1|5
 total_score: 10/70
 1eb2410
+Thu Apr  7 21:52:13 -04 2022: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ tests:  0|0
+64c271a
