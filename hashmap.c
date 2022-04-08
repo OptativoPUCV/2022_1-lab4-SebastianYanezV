@@ -59,9 +59,12 @@ void insertMap(HashMap * map, char * key, void * value)
             pos++;
         }
 
-        map->buckets[pos] = newPair;
-        map->current = pos;
-        map->size++;
+        if (is_equal(map->buckets[pos]->key, key) == 0)
+        {
+            map->buckets[pos] = newPair;
+            map->current = pos;
+            map->size++;
+        }
     }
 }
 
