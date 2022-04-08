@@ -248,3 +248,9 @@ Fri Apr  8 11:56:32 -04 2022:
  tests:  2|5
 total_score: 20/70
 edb8837
+Fri Apr  8 12:03:21 -04 2022: 
+ hashmap.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  2|5
+total_score: 20/70
+3167b26
