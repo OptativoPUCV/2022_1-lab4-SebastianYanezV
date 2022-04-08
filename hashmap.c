@@ -100,7 +100,7 @@ void eraseMap(HashMap * map,  char * key)
         map->buckets[pos]->key = NULL;
         map->size--;
     }
-    /*else
+    else
     {
         while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
         {
@@ -110,7 +110,7 @@ void eraseMap(HashMap * map,  char * key)
 
         map->buckets[pos]->key = NULL;
         map->size--;
-    }*/
+    }
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
