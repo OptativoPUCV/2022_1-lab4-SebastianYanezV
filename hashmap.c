@@ -196,10 +196,10 @@ Pair * nextMap(HashMap * map)
 
     if (pos == 1)
     {
-        map->current = pos;
-        return map->buckets[pos];
+        map->current = 2;
+        return map->buckets[2];
     } 
-    
+
     if (map->buckets[pos] == NULL) return NULL;
 
     map->current = pos;
