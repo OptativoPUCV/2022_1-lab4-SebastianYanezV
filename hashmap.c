@@ -140,9 +140,9 @@ Pair * searchMap(HashMap * map,  char * key)
 
 Pair * firstMap(HashMap * map) 
 {
-    long cont = 1;
+    long cont = 0;
 
-    if (map->buckets[0] != NULL) return map->buckets[0];
+    if (map->buckets[cont] != NULL) return map->buckets[cont];
     else
     {
         while (map->buckets[cont] == NULL) cont++;
@@ -152,6 +152,7 @@ Pair * firstMap(HashMap * map)
 
 Pair * nextMap(HashMap * map) 
 {
+    long indice = map->current;
     map->current++;
-    return map->buckets[map->current];
+    return map->buckets[indice];
 }
