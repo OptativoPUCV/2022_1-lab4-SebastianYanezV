@@ -163,7 +163,8 @@ Pair * firstMap(HashMap * map)
     }
     else
     {
-        while (map->buckets[pos] == NULL && map->buckets[pos]->key == NULL)
+        //map->buckets[pos] == NULL && map->buckets[pos]->key == NULL
+        while (1)
         {
             if (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
             {
@@ -184,8 +185,6 @@ Pair * firstMap(HashMap * map)
         map->current = pos;
         return map->buckets[pos];
     }
-
-    return NULL;
 }
 
 Pair * nextMap(HashMap * map) 
