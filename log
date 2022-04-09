@@ -404,3 +404,9 @@ Fri Apr  8 21:15:34 -04 2022:
  tests:  10|3
 total_score: 40/70
 1051edc
+Fri Apr  8 21:16:29 -04 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|3
+total_score: 40/70
+d215ee5

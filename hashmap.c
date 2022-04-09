@@ -152,7 +152,7 @@ Pair * firstMap(HashMap * map)
 
 Pair * nextMap(HashMap * map) 
 {
-    long indice = map->current;
     map->current++;
+    long indice = map->current;
     return map->buckets[indice];
 }
