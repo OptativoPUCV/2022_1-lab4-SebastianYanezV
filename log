@@ -911,3 +911,9 @@ In file included from test.c:4:
 1 error generated.
 Compilation failed
 f2313b6
+Sat Apr  9 19:37:05 -04 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+0bf2ff3
