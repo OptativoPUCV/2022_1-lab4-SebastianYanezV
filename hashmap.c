@@ -105,6 +105,7 @@ HashMap * createMap(long capacity)
 void eraseMap(HashMap * map,  char * key) 
 {    
     long pos = hash(key, map->capacity);
+    Pair *parBuscado;
 
     if (is_equal(map->buckets[pos]->key, key) == 1)
     {
@@ -114,9 +115,12 @@ void eraseMap(HashMap * map,  char * key)
     }
     else
     {
-        while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+        //while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+        while (1)
         {
-            if (is_equal(map->buckets[pos]->key, key) == 1) break;
+            parBuscado = searchMap(map, key);
+            //if (is_equal(map->buckets[pos]->key, key) == 1) break;
+            if (is_equal(map->buckets[pos]->key, parBuscado->key) == 1) break;
             pos = (pos + 1) % map->capacity;
         }
 
