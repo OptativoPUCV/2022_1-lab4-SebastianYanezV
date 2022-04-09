@@ -643,3 +643,13 @@ Sat Apr  9 13:09:06 -04 2022:
  tests:  12|2
 total_score: 50/70
 daaee1c
+Sat Apr  9 15:45:11 -04 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+./hashmap.c:80:12: error: variable 'oldBuckets' set but not used [-Werror,-Wunused-but-set-variable]
+    Pair **oldBuckets = (Pair **) malloc(map->capacity * sizeof(Pair *));
+           ^
+1 error generated.
+Compilation failed
+2a20b9e
