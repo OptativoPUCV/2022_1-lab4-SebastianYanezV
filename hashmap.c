@@ -181,7 +181,14 @@ Pair * firstMap(HashMap * map)
 
 Pair * nextMap(HashMap * map) 
 {
-    if (map->size == 0) return NULL;
+    for (long i = 0 ; i <= map->capacity ; i++)
+    {
+        if (map->buckets[i] != NULL) break;
+        else
+        {
+            if (i == map->capacity) return NULL;
+        }
+    }
 
     long pos = map->current + 1;
 
