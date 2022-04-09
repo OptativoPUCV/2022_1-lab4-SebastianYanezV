@@ -171,15 +171,13 @@ Pair * firstMap(HashMap * map)
                 map->current = pos;
                 return map->buckets[pos];
             }
-            else
+            if (pos == map->capacity)
             {
-                pos = (pos + 1) % map->capacity;
-                if (pos == 0)
-                {
-                    map->current = pos;
-                    return NULL;
-                }
+                map->current = pos;
+                return NULL;
             }
+            
+            pos = (pos + 1) % map->capacity;
         }
 
         map->current = pos;
