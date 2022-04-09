@@ -140,13 +140,16 @@ Pair * searchMap(HashMap * map,  char * key)
 
 Pair * firstMap(HashMap * map) 
 {
-    long cont = 0;
+    long pos = 0;
 
-    if (map->buckets[cont] != NULL) return map->buckets[cont];
+    if (map->buckets[pos] != NULL) return map->buckets[pos];
     else
     {
-        while (map->buckets[cont] == NULL) cont++;
-        return map->buckets[cont];
+        while (map->buckets[pos] == NULL)
+        {
+            pos = (pos + 1) % map->capacity;
+        }
+        return map->buckets[pos];
     }
 }
 
