@@ -450,3 +450,9 @@ Fri Apr  8 21:47:26 -04 2022:
  tests:  10|3
 total_score: 40/70
 b16c730
+Fri Apr  8 21:48:05 -04 2022: 
+ hashmap.c | 7 -------
+ 1 file changed, 7 deletions(-)
+ tests:  10|3
+total_score: 40/70
+6a92353
