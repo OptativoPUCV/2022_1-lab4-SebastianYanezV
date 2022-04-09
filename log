@@ -471,3 +471,9 @@ In file included from test.c:4:
 1 error generated.
 Compilation failed
 25cacb8
+Fri Apr  8 22:07:55 -04 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  10|3
+total_score: 40/70
+0c414aa

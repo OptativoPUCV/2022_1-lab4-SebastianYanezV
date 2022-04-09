@@ -79,6 +79,7 @@ void enlarge(HashMap * map)
 
     Pair **oldBuckets = (Pair **) malloc(map->capacity * sizeof(Pair *));
     oldBuckets = map->buckets;
+    oldBuckets[0]->key = NULL;
     /*long largoOldBuckets = map->size;
 
     map->capacity *= 2;
