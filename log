@@ -594,3 +594,8 @@ Sat Apr  9 12:19:22 -04 2022:
  tests:  10|3
 total_score: 40/70
 dbea32c
+Sat Apr  9 12:23:18 -04 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+0b45163
