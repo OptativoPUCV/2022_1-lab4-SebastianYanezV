@@ -156,15 +156,10 @@ Pair * firstMap(HashMap * map)
 {
     long pos = 0;
 
-    while (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
+    /*while (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
     {
         pos = (pos + 1) % map->capacity;
-    }
-
-    map->current = pos;
-    return map->buckets[pos];
-
-    /*long pos = 0;
+    }*/
 
     if (map->buckets[pos] != NULL) 
     {
@@ -177,16 +172,10 @@ Pair * firstMap(HashMap * map)
         {
             pos = (pos + 1) % map->capacity;
         }
-        
-        if (pos == map->capacity && map->buckets[pos] == NULL)
-        {
-            map->current = pos;
-            return NULL;
-        }
 
         map->current = pos;
         return map->buckets[pos];
-    }*/
+    }
 }
 
 Pair * nextMap(HashMap * map) 
