@@ -150,7 +150,8 @@ Pair * firstMap(HashMap * map)
     }
 }
 
-Pair * nextMap(HashMap * map) {
-
-    return NULL;
+Pair * nextMap(HashMap * map) 
+{
+    map->current++;
+    return map->buckets[map->current];
 }
