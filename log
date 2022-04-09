@@ -380,3 +380,9 @@ Fri Apr  8 21:02:46 -04 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 3c17c58
+Fri Apr  8 21:04:56 -04 2022: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+ tests:  10|3
+total_score: 40/70
+9c126be
