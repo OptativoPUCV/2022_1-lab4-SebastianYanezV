@@ -599,3 +599,8 @@ Sat Apr  9 12:23:18 -04 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 0b45163
+Sat Apr  9 12:49:29 -04 2022: 
+ hashmap.c | 18 ++----------------
+ 1 file changed, 2 insertions(+), 16 deletions(-)
+ tests:  0|0
+4ef571b
