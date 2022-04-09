@@ -588,3 +588,9 @@ Sat Apr  9 12:06:31 -04 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 e41aafb
+Sat Apr  9 12:19:22 -04 2022: 
+ hashmap.c | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+ tests:  10|3
+total_score: 40/70
+dbea32c
