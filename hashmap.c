@@ -113,11 +113,12 @@ void eraseMap(HashMap * map,  char * key)
     }
     else
     {
-        /*while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+        //while (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL)
+        while (is_equal(map->buckets[pos]->key, key) == 0)
         {
-            if (is_equal(map->buckets[pos]->key, key) == 1) break;
+            //if (is_equal(map->buckets[pos]->key, key) == 1) break;
             pos = (pos + 1) % map->capacity;
-        }*/
+        }
 
         map->buckets[pos]->key = NULL;
         map->size--;
