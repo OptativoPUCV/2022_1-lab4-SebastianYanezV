@@ -194,5 +194,7 @@ Pair * nextMap(HashMap * map)
 
     map->current = pos;
 
+    if (map->buckets[pos] == NULL) return NULL;
+
     return map->buckets[pos];
 }
