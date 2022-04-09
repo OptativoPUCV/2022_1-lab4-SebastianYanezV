@@ -541,3 +541,14 @@ Sat Apr  9 12:01:02 -04 2022:
  1 file changed, 3 insertions(+), 3 deletions(-)
  tests:  0|0
 bf96d26
+Sat Apr  9 12:02:24 -04 2022: 
+ hashmap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+./hashmap.c:119:60: error: if statement has empty body [-Werror,-Wempty-body]
+            if (is_equal(map->buckets[pos]->key, key) == 1);
+                                                           ^
+./hashmap.c:119:60: note: put the semicolon on a separate line to silence this warning
+1 error generated.
+Compilation failed
+b1f54cc
