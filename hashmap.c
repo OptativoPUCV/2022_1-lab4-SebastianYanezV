@@ -151,6 +151,7 @@ Pair * firstMap(HashMap * map)
         }
         return map->buckets[pos];
     }
+    return map->buckets[pos];
 }
 
 Pair * nextMap(HashMap * map) 
