@@ -85,10 +85,10 @@ void enlarge(HashMap * map)
     map->buckets = (Pair **) malloc(map->capacity * sizeof(Pair *));
     map->size = 0;
 
-    /*for (int i = 0 ; i < largoOldBuckets ; i++)
+    for (int i = 0 ; i < largoOldBuckets ; i++)
     {
         insertMap(map, oldBuckets[i]->key, oldBuckets[i]->value);
-    }*/
+    }
 }
 
 HashMap * createMap(long capacity) 
