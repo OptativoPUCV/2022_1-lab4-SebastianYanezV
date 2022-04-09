@@ -169,7 +169,7 @@ Pair * firstMap(HashMap * map)
         }
 
         map->current = pos;
-        return map->buckets[pos];
+        return map->buckets[pos+1];
     }
 }
 
