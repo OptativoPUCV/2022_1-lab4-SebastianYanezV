@@ -526,3 +526,13 @@ Sat Apr  9 11:57:20 -04 2022:
  1 file changed, 2 insertions(+), 6 deletions(-)
  tests:  0|0
 36b9767
+Sat Apr  9 12:00:27 -04 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+./hashmap.c:119:61: error: 'break' statement not in loop or switch statement
+            if (is_equal(map->buckets[pos]->key, key) == 1) break;
+                                                            ^
+1 error generated.
+Compilation failed
+f1ad5d1
