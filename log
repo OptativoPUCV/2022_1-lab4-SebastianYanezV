@@ -434,3 +434,13 @@ Fri Apr  8 21:39:37 -04 2022:
  tests:  10|3
 total_score: 40/70
 eb98633
+Fri Apr  8 21:45:31 -04 2022: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+./hashmap.c:98:41: error: void function 'eraseMap' should not return a value [-Wreturn-type]
+    if (map->buckets[pos]->key == NULL) return NULL;
+                                        ^      ~~~~
+1 error generated.
+Compilation failed
+8792ee0
