@@ -166,16 +166,14 @@ Pair * firstMap(HashMap * map)
         map->current = pos;
         return map->buckets[pos];
     }
-    else
-    {
-        while (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
-        {
-            pos = (pos + 1) % map->capacity;
-        }
 
-        map->current = pos;
-        return map->buckets[pos];
+    while (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
+    {
+        pos = (pos + 1) % map->capacity;
     }
+
+    map->current = pos;
+    return map->buckets[pos];
 }
 
 Pair * nextMap(HashMap * map) 
