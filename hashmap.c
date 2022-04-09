@@ -151,12 +151,10 @@ Pair * firstMap(HashMap * map)
         }
         return map->buckets[pos];
     }
-    return map->buckets[pos];
 }
 
 Pair * nextMap(HashMap * map) 
 {
     map->current++;
-    long indice = map->current;
-    return map->buckets[indice];
+    return map->buckets[map->current];
 }
