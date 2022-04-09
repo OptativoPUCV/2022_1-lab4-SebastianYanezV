@@ -477,3 +477,16 @@ Fri Apr  8 22:07:55 -04 2022:
  tests:  10|3
 total_score: 40/70
 0c414aa
+Fri Apr  8 22:08:29 -04 2022: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+./hashmap.c:82:10: error: unused variable 'largoOldBuckets' [-Werror,-Wunused-variable]
+    long largoOldBuckets = map->size;
+         ^
+./hashmap.c:80:12: error: variable 'oldBuckets' set but not used [-Werror,-Wunused-but-set-variable]
+    Pair **oldBuckets = (Pair **) malloc(map->capacity * sizeof(Pair *));
+           ^
+2 errors generated.
+Compilation failed
+4aa2e59
