@@ -184,6 +184,8 @@ Pair * firstMap(HashMap * map)
         map->current = pos;
         return map->buckets[pos];
     }
+
+    return NULL;
 }
 
 Pair * nextMap(HashMap * map) 
