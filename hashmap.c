@@ -170,7 +170,7 @@ Pair * firstMap(HashMap * map)
                 map->current = pos;
                 return NULL;
             }
-            
+
             pos = (pos + 1) % map->capacity;
         }
 
@@ -182,6 +182,6 @@ Pair * firstMap(HashMap * map)
 Pair * nextMap(HashMap * map) 
 {
     map->current++;
-    if (map->buckets[map->current] == NULL) return NULL;
+    //if (map->buckets[map->current] == NULL) return NULL;
     return map->buckets[map->current];
 }
