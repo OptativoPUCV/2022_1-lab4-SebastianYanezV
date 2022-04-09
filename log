@@ -681,3 +681,13 @@ Sat Apr  9 15:52:46 -04 2022:
  tests:  12|2
 total_score: 50/70
 79da7b4
+Sat Apr  9 15:54:22 -04 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+./hashmap.c:171:40: error: non-void function 'firstMap' should return a value [-Wreturn-type]
+        if (map->buckets[pos] == NULL) return;
+                                       ^
+1 error generated.
+Compilation failed
+cb21f0c

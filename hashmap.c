@@ -168,6 +168,7 @@ Pair * firstMap(HashMap * map)
             pos = (pos + 1) % map->capacity;
         }
 
+        if (map->buckets[pos] == NULL) return;
         map->current = pos;
         return map->buckets[pos];
     }
