@@ -188,6 +188,8 @@ Pair * nextMap(HashMap * map)
         if (map->buckets[pos] == NULL || map->buckets[pos]->key == NULL)
         {
             pos = (pos + 1) % map->capacity;
+
+            if (pos == 0) return NULL;
         }
         else break;
     }
