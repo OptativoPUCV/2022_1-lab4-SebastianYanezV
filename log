@@ -983,3 +983,9 @@ Sun Apr 10 21:54:55 -04 2022:
  tests:  17|0
 total_score: 70/70
 e26c341
+Sun Apr 10 21:55:16 -04 2022: 
+ hashmap.c | 10 ----------
+ 1 file changed, 10 deletions(-)
+ tests:  17|0
+total_score: 70/70
+6bc409b
